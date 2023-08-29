@@ -1,0 +1,17 @@
+server:
+  port: 51803
+spring:
+  application:
+    name: leadnews-wemedia
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 111.230.45.35:8848
+      config:
+        server-addr: 111.230.45.35:8848
+        file-extension: yml
+
+# ORC中文训练集的数据，用于识别图片中的文字
+tess4j:
+  data-path: C:\Users\620\Desktop\heima-leadnews\tessdata
+  language: chi_sim

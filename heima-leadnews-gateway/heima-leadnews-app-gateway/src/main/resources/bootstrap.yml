@@ -1,0 +1,12 @@
+server:
+  port: 51601
+spring:
+  application:
+    name: leadnews-app-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 111.230.45.35:8848
+      config:
+        server-addr: 111.230.45.35:8848
+        file-extension: yml

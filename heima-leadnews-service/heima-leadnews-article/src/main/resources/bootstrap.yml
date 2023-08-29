@@ -1,0 +1,16 @@
+server:
+  port: 51802
+spring:
+  application:
+    name: leadnews-article
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 111.230.45.35:8848
+      config:
+        server-addr: 111.230.45.35:8848
+        file-extension: yml
+
+kafka:
+  hosts: 111.230.45.35:9092
+  group: ${spring.application.name}
